@@ -1,0 +1,42 @@
+[
+  {
+    "id": "h-1",
+    "name": "Drink Water",
+    "category": "Health",
+    "difficulty": "Easy",
+    "frequency": "Daily",
+    "description": "Drink at least 500ml of water immediately upon waking."
+  },
+  {
+    "id": "h-2",
+    "name": "Meditation",
+    "category": "Mindfulness",
+    "difficulty": "Medium",
+    "frequency": "Daily",
+    "description": "5-10 minutes of guided or silent meditation."
+  },
+  {
+    "id": "h-3",
+    "name": "Journaling",
+    "category": "Mindfulness",
+    "difficulty": "Easy",
+    "frequency": "Daily",
+    "description": "Write down 3 things you are grateful for."
+  },
+  {
+    "id": "h-4",
+    "name": "Reading",
+    "category": "Growth",
+    "difficulty": "Medium",
+    "frequency": "Daily",
+    "description": "Read 10 pages of a non-fiction book."
+  },
+  {
+    "id": "h-5",
+    "name": "Exercise",
+    "category": "Fitness",
+    "difficulty": "Hard",
+    "frequency": "Daily",
+    "description": "30 minutes of moderate intensity physical activity."
+  }
+]
