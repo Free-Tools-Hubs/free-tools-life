@@ -4,28 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="LifeHub: 1100+ free, private, and offline-first templates for habits, morning routines, and goal tracking. Transform your life without being tracked." />
+    content="Build durable habits and structure your day with free, 100% private, offline-first templates for morning routines, deep work, fitness, mindfulness, and evening rituals." />
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#6366f1" />
+  <link rel="canonical" href="https://life.freetoolshubs.com/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://life.freetoolshubs.com/" />
-  <meta property="og:title" content="LifeHub | Free Offline Habit & Planner Tools" />
+  <meta property="og:title" content="LifeHub — Free Offline Habit Trackers, Morning Routines & Daily Planners | LifeHub" />
   <meta property="og:description"
-    content="1100+ free, private, and offline-first templates for habits, morning routines, and goal tracking." />
-  <meta property="og:image" content="/og-image.png" />
+    content="Build durable habits and structure your day with free, 100% private, offline-first templates for morning routines, deep work, fitness, mindfulness, and evening rituals." />
+  <meta property="og:image" content="https://life.freetoolshubs.com/og-image.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://life.freetoolshubs.com/" />
-  <meta property="twitter:title" content="LifeHub | Free Offline Habit & Planner Tools" />
+  <meta property="twitter:title" content="LifeHub — Free Offline Habit Trackers, Morning Routines & Daily Planners | LifeHub" />
   <meta property="twitter:description"
-    content="1100+ free, private, and offline-first templates for habits, morning routines, and goal tracking." />
-  <meta property="twitter:image" content="/og-image.png" />
+    content="Build durable habits and structure your day with free, 100% private, offline-first templates for morning routines, deep work, fitness, mindfulness, and evening rituals." />
+  <meta property="twitter:image" content="https://life.freetoolshubs.com/og-image.png" />
 
-  <title>LifeHub | Free Offline Habit & Planner Tools</title>
+  <title>LifeHub — Free Offline Habit Trackers, Morning Routines & Daily Planners | LifeHub</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,20 +42,19 @@
 
     gtag('config', 'G-2EJD4KWP03');
   </script>
-  <!-- Meta tags for AdSense approval -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!--PRERENDER_HEAD-->
 </head>
 
 <body>
+  <div id="root"><!--PRERENDER_HTML--></div>
+  <!--PRERENDER_DATA-->
   <noscript>
-    <div style="padding: 2rem; text-align: center; background: #0f172a; color: white;">
-      <h1>JavaScript Required</h1>
-      <p>This interactive life-tool suite requires JavaScript to track your habits and goals offline. Please enable it
-        to continue.</p>
+    <div style="padding: 1rem; text-align: center; background: #1e293b; color: #94a3b8; font-size: 0.85rem;">
+      Note: Interactive habit streak checkboxes and local browser storage require JavaScript. All template guides and checklists above are viewable without JavaScript.
     </div>
   </noscript>
-  <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

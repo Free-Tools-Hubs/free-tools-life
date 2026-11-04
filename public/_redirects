@@ -1,1 +1,7 @@
-/*  /index.html  200
+# Canonical host & protocol redirects
+http://life.freetoolshubs.com/* https://life.freetoolshubs.com/:splat 301!
+http://www.life.freetoolshubs.com/* https://life.freetoolshubs.com/:splat 301!
+https://www.life.freetoolshubs.com/* https://life.freetoolshubs.com/:splat 301!
+
+# Explicit 404 fallback for unknown routes (Netlify serves static files first before evaluating non-forced rules)
+/*  /404.html  404

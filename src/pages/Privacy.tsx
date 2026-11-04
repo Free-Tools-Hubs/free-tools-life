@@ -1,38 +1,43 @@
+import SEO from '../components/SEO';
+import { BASE_URL } from '../utils/indexabilityPolicy';
+
 const Privacy = () => {
   return (
-    <div className="glass-card" style={{ maxWidth: '800px', margin: '2rem auto' }}>
+    <div className="glass-card" style={{ maxWidth: '800px', margin: '2rem auto', padding: '2.5rem' }}>
+      <SEO
+        title="Privacy Policy"
+        description="LifeHub Privacy Policy: Learn how your habit and goal data remains stored locally on your device in LocalStorage and IndexedDB."
+        canonical={`${BASE_URL}/privacy`}
+        robots="noindex, follow"
+      />
       <h1>Privacy Policy</h1>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Last updated: {new Date().toLocaleDateString()}</p>
+      <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Effective Date: April 17, 2026</p>
 
       <section style={{ marginBottom: '2rem' }}>
-        <h2>1. Data Autonomy</h2>
-        <p>
-          LifeHub is designed as a "Zero-Data" application. We do not store your personal information, habit data, or goals on any remote server.
-          Everything you input remains entirely within your browser's local storage systems (LocalStorage and IndexedDB).
+        <h2>1. Local-First Data Autonomy</h2>
+        <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>
+          LifeHub is engineered as a local-first web application. We do not store your personal habit checklists, streak logs, or goals on any remote database. Everything you enter into your tracker remains within your browser’s local storage systems (LocalStorage and IndexedDB).
         </p>
       </section>
 
       <section style={{ marginBottom: '2rem' }}>
-        <h2>2. Cookies and Tracking</h2>
-        <p>
-          We do not use tracking cookies. We may use local storage to remember your theme preference or app state, which remains on your device.
-          We use simple, non-tracking analytics to understand basic site traffic without identifying individuals.
+        <h2>2. Cookies, Analytics, and Local Storage</h2>
+        <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>
+          We use LocalStorage and IndexedDB strictly to persist your application state on your own device. We use aggregate traffic analytics (Google Analytics) to understand overall page visits and performance metrics without accessing your private habit tracker entries.
         </p>
       </section>
 
       <section style={{ marginBottom: '2rem' }}>
         <h2>3. Third-Party Services</h2>
-        <p>
-          We may display advertisements from third-party networks. These networks may collect basic technical information (like your IP address)
-          to serve ads, but LifeHub does not share your internal app data with them.
+        <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>
+          We may display sponsorships or advertisements from third-party networks. While those networks may receive standard HTTP request headers (such as IP address and browser user-agent) to deliver content, LifeHub never transmits your internal habit or goal data to third parties.
         </p>
       </section>
 
       <section style={{ marginBottom: '2rem' }}>
         <h2>4. Data Deletion</h2>
-        <p>
-          To delete all your data, simply clear your browser's site data for LifeHub. Since we don't have a backend, once you clear your local storage,
-          your data is gone forever and cannot be recovered by us.
+        <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>
+          To delete all of your stored habit and goal data at any time, clear your browser’s site data for <code>life.freetoolshubs.com</code> or remove individual habits and goals inside your dashboard. Because we do not maintain user accounts or server backups, cleared local data is permanently removed.
         </p>
       </section>
     </div>
