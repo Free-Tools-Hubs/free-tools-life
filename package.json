@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build:tier1": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs --tier1-only",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "generate-sitemap": "node scripts/generate-sitemap.cjs",
+    "audit-templates": "node scripts/audit-templates.cjs",
+    "validate-seo": "node scripts/validate-seo.cjs",
     "seed-templates": "node scripts/seed-templates.cjs"
   },
   "dependencies": {
